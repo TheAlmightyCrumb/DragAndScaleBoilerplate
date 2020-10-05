@@ -236,9 +236,7 @@ describe("The object should be scalable by dragging the corners", () => {
           let smallerHeight = newMesures.height;
           let smallerWidth = newMesures.width;
           let newOpCorner = newMesures[opposites[cor]];
-          expect(initialWidth - smallerWidth).toBeGreaterThanOrEqual(55);
           expect(initialWidth - smallerWidth).toBeLessThanOrEqual(95);
-          expect(initialHeight - smallerHeight).toBeGreaterThanOrEqual(55);
           expect(initialHeight - smallerHeight).toBeLessThanOrEqual(95);
           expect(opCorner.x - newOpCorner.x).toBeGreaterThanOrEqual(-20);
           expect(opCorner.x - newOpCorner.x).toBeLessThanOrEqual(20);

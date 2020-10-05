@@ -37,3 +37,74 @@
 
 /*Add your code below*/
 
+.resizable .resizers {
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+.resizable .resizers .resizer{
+  width: 5px;
+  height: 5px;
+  background: pink;
+  position: absolute;
+}
+
+.resizable .resizers .resizer.top-left {
+  left: 0;
+  top: 0;
+  cursor: nwse-resize; /*resizer cursor*/
+}
+.resizable .resizers .resizer.top-right {
+  right: 0;
+  top: 0;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-left {
+  left: 0;
+  bottom: 0;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-right {
+  right: 0;
+  bottom: 0;
+  cursor: nwse-resize;
+}
+
+.resizable .resizers .resizer.top {
+  height: 5px;
+  background: black;
+  position: absolute;
+  width: calc(100% - 10px);
+  top: 0;
+  cursor: ns-resize;
+}
+
+.resizable .resizer.bottom {
+  height: 5px;
+  background: black;
+  position: absolute;
+  width: calc(100% - 10px);
+  bottom: 0;
+  cursor: ns-resize;
+}
+
+.resizable .resizer.right {
+  height: calc(100% - 10px);
+  background: black;
+  position: absolute;
+  width: 5px;
+  right: 0;
+  cursor: ew-resize;
+  padding: auto;
+}
+
+.resizable .resizer.left {
+  height: calc(100% - 10px);
+  background: black;
+  position: absolute;
+  width: 5px;
+  left: 0;
+  cursor: ew-resize;
+}
