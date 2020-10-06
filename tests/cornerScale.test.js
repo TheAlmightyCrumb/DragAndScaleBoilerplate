@@ -163,7 +163,7 @@ describe("The object should be scalable by dragging the corners", () => {
     });
   });
   describe("Cant be minimized to less then is allowed", () => {
-    let min = 15;
+    let min = 100;
     test("Can't shrink to much horizantly", async (done) => {
       let { bottomRight, bottomLeft } = await getMesures();
       await page.mouse.move(bottomRight.x - 2, bottomRight.y - 2);
